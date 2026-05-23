@@ -1,0 +1,41 @@
+Colours
+Primary: #ddfe71 (lime green), #addcec (light blue), #132644 (dark navy), #2f2f32 (near black), #ececec (light grey)
+Secondary: #fbf9ed, #f8dbd3, #fe7833 (orange accent), #e4dafc, #203a37
+Use a maximum of 3 dominant colours per page.
+
+Colour usage:
+- Background: #132644 (dark navy) or #fbf9ed (off white)
+- Headings: #ddfe71 (lime) on dark backgrounds, #132644 (navy) on light backgrounds
+- CTA buttons: #ddfe71 with #132644 text
+- Body text: #ececec on dark, #2f2f32 on light
+- Accent highlights: #fe7833 sparingly for one key callout per page
+
+Typography
+- Headings: Unbounded (import from Google Fonts)
+- Body and subheadings: Montserrat (import from Google Fonts)
+- Maintain clear visual hierarchy: main headline → subhead → supporting text → CTA
+- Copy must always be legible. High contrast at all times.
+
+Layout & Design Style
+- Sharp angles and straight lines only. No rounded corners, no curved decorative elements.
+- Clean layout, strong visual hierarchy, no clutter.
+- Mobile-first, fast loading.
+- Each page must pass this check: does it communicate Pain → Performance?
+
+Positioning
+Stance Health sits at the intersection of Performance × Recovery × Science.
+
+Headlines:
+- Back & Spine: "From Pain to Performance. Your spine, restored."
+- Sports Injury: "Built to recover. Trained to perform."
+- Knee Pain: "Get back to full movement. Science-backed knee rehab."
+- Women's Health: "Recover stronger. Pelvic health and performance for women."
+- General: "Pain → Performance. Physiotherapy that goes further."
+
+Technology:
+"Powered by VALD Technology — ForceFrame, ForceDecks, RunScribe and more."
+
+CTA:
+Label: "Book Your Assessment"
+Colour: #ddfe71 background, #132644 text, no border radius
+Link: https://dashboard.stance.health/onboarding-patient
