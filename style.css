@@ -1,0 +1,167 @@
+/* General Styles */
+:root {
+    --primary-color: #007bff;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+    --white: #ffffff;
+    --max-width: 800px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 20px;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Above the Fold */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Benefits Section */
+.benefits {
+    margin-bottom: 40px;
+}
+
+.benefits h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.benefits ul {
+    list-style-type: none;
+}
+
+.benefits li {
+    background: #e9ecef;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    padding-left: 45px;
+}
+
+.benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Testimonial Section */
+.testimonial {
+    background: #f1f3f5;
+    padding: 25px;
+    border-left: 5px solid var(--primary-color);
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.testimonial p {
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    font-style: normal;
+}
+
+/* Locations Section */
+.locations {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.locations h3 {
+    margin-bottom: 15px;
+}
+
+.locations ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.locations li {
+    background: #eee;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* CTA Button */
+.cta-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 18px 36px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile First - Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
