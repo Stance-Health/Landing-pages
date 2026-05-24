@@ -1,0 +1,113 @@
+
+> stance-health-web@1.0.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 535ms
+
+Error: Route "/" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at Home (app/page.tsx:11:28)
+   9 |
+  10 | export default function Home({ searchParams }: { searchParams: { concept?: string } }) {
+> 11 |   const concept = parseInt(searchParams?.concept || '5')
+     |                            ^
+  12 |   const isDark = concept === 2 || concept === 4;
+  13 |
+  14 |   return (
+ GET /?concept=5 200 in 1060ms (next.js: 281ms, application-code: 779ms)
+[browser] A searchParam property was accessed directly with `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at Home (app/page.tsx:11:28)
+   9 |
+  10 | export default function Home({ searchParams }: { searchParams: { concept?: string } }) {
+> 11 |   const concept = parseInt(searchParams?.concept || '5')
+     |                            ^
+  12 |   const isDark = concept === 2 || concept === 4;
+  13 |
+  14 |   return ( (app/page.tsx:11:28)
+[browser] A searchParam property was accessed directly with `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at Home (app/page.tsx:11:28)
+   9 |
+  10 | export default function Home({ searchParams }: { searchParams: { concept?: string } }) {
+> 11 |   const concept = parseInt(searchParams?.concept || '5')
+     |                            ^
+  12 |   const isDark = concept === 2 || concept === 4;
+  13 |
+  14 |   return ( (app/page.tsx:11:28)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+Error: Route "/knee-pain" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KneePain (app/knee-pain/page.tsx:5:41)
+  3 |
+  4 | export default function KneePain({ searchParams }: { searchParams: { concept?: string } }) {
+> 5 |   const concept = parseInt(searchParams.concept || '1')
+    |                                         ^
+  6 |   return <ConceptLayout content={content.knee} concept={concept} pageType="injury" />
+  7 | }
+  8 |
+ GET /knee-pain?concept=1 200 in 317ms (next.js: 25ms, application-code: 291ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+Error: Route "/sports-injury" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at SportsInjury (app/sports-injury/page.tsx:5:41)
+  3 |
+  4 | export default function SportsInjury({ searchParams }: { searchParams: { concept?: string }...
+> 5 |   const concept = parseInt(searchParams.concept || '2')
+    |                                         ^
+  6 |   return <ConceptLayout content={content.sports} concept={concept} pageType="injury" />
+  7 | }
+  8 |
+ GET /sports-injury?concept=2 200 in 162ms (next.js: 25ms, application-code: 137ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+ GET /fonts/Unbounded-Bold.ttf 404 in 110ms (next.js: 25ms, application-code: 85ms)
+Error: Route "/back-spine" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at BackSpine (app/back-spine/page.tsx:5:41)
+  3 |
+  4 | export default function BackSpine({ searchParams }: { searchParams: { concept?: string } }) {
+> 5 |   const concept = parseInt(searchParams.concept || '3')
+    |                                         ^
+  6 |   return <ConceptLayout content={content.back} concept={concept} pageType="injury" />
+  7 | }
+  8 |
+ GET /back-spine?concept=3 200 in 121ms (next.js: 20ms, application-code: 101ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+Error: Route "/womens-health" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at WomensHealth (app/womens-health/page.tsx:5:41)
+  3 |
+  4 | export default function WomensHealth({ searchParams }: { searchParams: { concept?: string }...
+> 5 |   const concept = parseInt(searchParams.concept || '4')
+    |                                         ^
+  6 |   return <ConceptLayout content={content.womens} concept={concept} pageType="injury" />
+  7 | }
+  8 |
+ GET /womens-health?concept=4 200 in 180ms (next.js: 24ms, application-code: 156ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+ GET /fonts/Unbounded-Bold.ttf 404 in 82ms (next.js: 12ms, application-code: 70ms)
+Error: Route "/" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at Home (app/page.tsx:11:28)
+   9 |
+  10 | export default function Home({ searchParams }: { searchParams: { concept?: string } }) {
+> 11 |   const concept = parseInt(searchParams?.concept || '5')
+     |                            ^
+  12 |   const isDark = concept === 2 || concept === 4;
+  13 |
+  14 |   return (
+ GET / 200 in 86ms (next.js: 3ms, application-code: 82ms)
+[browser] A searchParam property was accessed directly with `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at Home (app/page.tsx:11:28)
+   9 |
+  10 | export default function Home({ searchParams }: { searchParams: { concept?: string } }) {
+> 11 |   const concept = parseInt(searchParams?.concept || '5')
+     |                            ^
+  12 |   const isDark = concept === 2 || concept === 4;
+  13 |
+  14 |   return ( (app/page.tsx:11:28)
+[browser] A searchParam property was accessed directly with `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at Home (app/page.tsx:11:28)
+   9 |
+  10 | export default function Home({ searchParams }: { searchParams: { concept?: string } }) {
+> 11 |   const concept = parseInt(searchParams?.concept || '5')
+     |                            ^
+  12 |   const isDark = concept === 2 || concept === 4;
+  13 |
+  14 |   return ( (app/page.tsx:11:28)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
