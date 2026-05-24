@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lime: #ddfe71;
+  --navy: #132644;
+  --off-white: #fbf9ed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-unbounded uppercase;
+}
+
+.sharp-border {
+  border-radius: 0 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #132644;
+}
+::-webkit-scrollbar-thumb {
+  background: #ddfe71;
+}
