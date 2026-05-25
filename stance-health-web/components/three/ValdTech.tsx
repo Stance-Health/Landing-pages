@@ -8,7 +8,7 @@ export function ValdTech({ active = false }) {
   const group = useRef<THREE.Group>(null!)
 
   useFrame((state) => {
-    if (active) {
+    if (active && group.current) {
       group.current.rotation.y += 0.01
     }
   })
@@ -19,7 +19,6 @@ export function ValdTech({ active = false }) {
     <group ref={group} position={[2, 0, 0]}>
       <Float speed={2} rotationIntensity={0.5} floatIntensity={0.5}>
         <Text
-          font="/fonts/Unbounded-Bold.ttf"
           fontSize={0.2}
           color="#ddfe71"
           anchorX="center"
