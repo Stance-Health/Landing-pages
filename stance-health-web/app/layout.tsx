@@ -1,5 +1,7 @@
 import './globals.css'
 import { Unbounded, Montserrat } from 'next/font/google'
+import { ConceptSwitcher } from '../components/ui/ConceptSwitcher'
+import { Suspense } from 'react'
 
 const unbounded = Unbounded({
   subsets: ['latin'],
@@ -32,8 +34,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="${unbounded.variable} ${montserrat.variable} scroll-smooth">
+    <html lang="en" className={`${unbounded.variable} ${montserrat.variable} scroll-smooth`}>
       <body className="font-montserrat bg-off-white text-navy m-0 p-0 selection:bg-lime selection:text-navy">
+        <Suspense fallback={null}>
+          <ConceptSwitcher />
+        </Suspense>
         {children}
       </body>
     </html>
