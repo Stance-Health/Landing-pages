@@ -1,0 +1,67 @@
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 635ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles:
+   * /app/stance-health-web/package-lock.json
+
+
+○ Compiling /back-spine ...
+Error: Route "/back-spine" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at BackSpine (app/back-spine/page.tsx:5:41)
+  3 |
+  4 | export default function BackSpine({ searchParams }: { searchParams: { concept?: string } }) {
+> 5 |   const concept = parseInt(searchParams.concept || '3')
+    |                                         ^
+  6 |   return <ConceptLayout content={content.back} concept={concept} pageType="injury" />
+  7 | }
+  8 |
+ HEAD /back-spine?concept=3 200 in 10.6s (next.js: 8.9s, application-code: 1673ms)
+⚠ Found a change in next.config.js. Restarting the server to apply the changes...
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 479ms
+⚠ Invalid next.config.js options detected:
+⚠     Unrecognized key(s) in object: 'turbo' at "experimental"
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /app/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles:
+   * /app/stance-health-web/package-lock.json
+
+- Experiments (use with caution):
+  ? turbo (invalid experimental key)
+
+Error: Route "/back-spine" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at BackSpine (app/back-spine/page.tsx:5:41)
+  3 |
+  4 | export default function BackSpine({ searchParams }: { searchParams: { concept?: string } }) {
+> 5 |   const concept = parseInt(searchParams.concept || '3')
+    |                                         ^
+  6 |   return <BackSpineLayout content={content.back} concept={concept} />
+  7 | }
+  8 |
+ HEAD /back-spine?concept=3 200 in 1239ms (next.js: 312ms, application-code: 927ms)
+Error: Route "/back-spine" used `searchParams.concept`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at BackSpine (app/back-spine/page.tsx:5:41)
+  3 |
+  4 | export default function BackSpine({ searchParams }: { searchParams: { concept?: string } }) {
+> 5 |   const concept = parseInt(searchParams.concept || '3')
+    |                                         ^
+  6 |   return <BackSpineLayout content={content.back} concept={concept} />
+  7 | }
+  8 |
+ GET /back-spine?concept=3 200 in 691ms (next.js: 112ms, application-code: 578ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] Image with src "/images/physio with patient.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/images/reformer.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/images/forceframe.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/images/football pitch.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/images/new stance sanket.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
